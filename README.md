@@ -1,4 +1,4 @@
-# [CVPR2024 Workshop (oral)] LaPA: Latent Prompt Assist Model For Medical Visual Question Answering
+# RESEARCHING: [CVPR2024 Workshop (oral)] LaPA: Latent Prompt Assist Model For Medical Visual Question Answering
 This is the implementation of LaPA: Latent Prompt Assist Model For Medical Visual Question Answering. [[CVPR Workshop]](https://ai-medical-image-analysis.github.io/4th/) [[Paper]](https://arxiv.org/pdf/2404.13039.pdf) [[Video]](https://drive.google.com/file/d/19LXZPiBJLyohXDUEKj4NvH7ds8X3r3aZ/view?usp=drive_link)
 ## Abstract
 <div  align="center">    
@@ -17,13 +17,23 @@ pip install -r requirements.txt # method 2
 ```bash
 ├── checkpoints
 ├── data
+│   ├── vqa_medvqa_2019_train.arrow
+│   ├── vqa_medvqa_2019_val.arrow
 │   ├── vqa_medvqa_2019_test.arrow
-│   ├── ......
+│   ├── vqa_slack_train.arrow
+│   ├── vqa_slack_val.arrow
+│   ├── vqa_slack_test.arrow
+│   ├── vqa_vqa_rad_train.arrow
+│   ├── vqa_vqa_rad_val.arrow
+│   ├── vqa_vqa_rad_test.arrow
 ├── download
 │   ├── checkpoints
 │   ├── external_data
 │   ├── pretrained
 │   │   ├── m3ae.ckpt
+│   │   ├── m3ae_finetuned_vqa_medvqa_2019_80.5.ckpt
+│   │   ├── m3ae_finetuned_vqa_slack_84.3.ckpt
+│   │   ├── m3ae_finetuned_vqa_rad_77.4.ckpt
 │   ├── roberta-base
 ├── m3ae
 ├── prepro
